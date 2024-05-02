@@ -20,66 +20,82 @@ public abstract class Empleado implements CalcularSalario {
     }
 
     public String getNombre() {
+
         return nombre;
     }
 
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 
     public String getRol() {
+
         return rol;
     }
 
     public void setRol(String rol) {
+
         this.rol = rol;
     }
 
     public String getUbicacion() {
+
         return ubicacion;
     }
 
     public void setUbicacion(String ubicacion) {
+
         this.ubicacion = ubicacion;
     }
 
     public Long getSalarioBase() {
+
         return salarioBase;
     }
 
     public void setSalarioBase(Long salarioBase) {
+
         this.salarioBase = salarioBase;
     }
 
     public Long getBonificaciones() {
+
         return bonificaciones;
     }
 
     public void setBonificaciones(Long bonificaciones) {
+
         this.bonificaciones = bonificaciones;
     }
 
     public String getNivelJerarquico() {
+
         return nivelJerarquico;
     }
 
     public void setNivelJerarquico(String nivelJerarquico) {
+
         this.nivelJerarquico = nivelJerarquico;
     }
 
     public String[] getIdiomasHablados() {
+
         return idiomasHablados;
     }
 
     public void setIdiomasHablados(String[] idiomasHablados) {
+
         this.idiomasHablados = idiomasHablados;
     }
 
     public String[] getHabilidadesTecnicas() {
+
         return habilidadesTecnicas;
     }
 
     public void setHabilidadesTecnicas(String[] habilidadesTecnicas) {
+
         this.habilidadesTecnicas = habilidadesTecnicas;
     }
 
