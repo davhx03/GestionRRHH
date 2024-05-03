@@ -4,6 +4,7 @@ public abstract class Empleado implements CalcularSalario {
     private String ubicacion;
     private Long salarioBase;
     private Long bonificaciones;
+    private Long salarioTotal;
     private String nivelJerarquico;
     private String[] idiomasHablados;
     private String[] habilidadesTecnicas;
@@ -100,11 +101,21 @@ public abstract class Empleado implements CalcularSalario {
     }
 
     @Override
-    public double calcularSalario() {
+    public long calcularSalario() {
+        salarioTotal = salarioBase+bonificaciones;
+        return salarioTotal;
+    }
 
-        return getSalarioBase() + getBonificaciones();
+    @Override
+    public void mostrarEmpleado() {
+        System.out.println("\nNombre: " + nombre + "\nRol: " + rol +"\nSalario Total:"+salarioTotal+ "\nNivel Jerarquico: " + nivelJerarquico + "\n Idiomas Hablados: ");
 
-        return salarioBase + bonificaciones;
-
+        for (int i = 0; i < idiomasHablados.length; i++) {
+            System.out.print(idiomasHablados[i] + ", ");
+        }
+        System.out.println("\nHabilidades técnicas: ");
+        for (int i = 0; i < habilidadesTecnicas.length; i++) {
+            System.out.print(habilidadesTecnicas[i] + ", ");
+        }
     }
 }

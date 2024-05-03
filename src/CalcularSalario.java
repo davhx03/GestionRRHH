@@ -1,6 +1,7 @@
 public interface CalcularSalario {
 
-    public double calcularSalario();
+     long calcularSalario();
+     void mostrarEmpleado();
 
 
 }
