@@ -1,4 +1,4 @@
-public abstract class Industria {
+public abstract class Industria implements Complejidades{
     private Desarrollador[] desarrolladores;
     private AnalistaFinanciero[] analistas;
     private IngenieroProduccion[] ingenieros;
