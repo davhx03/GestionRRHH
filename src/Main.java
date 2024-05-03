@@ -20,6 +20,22 @@ public class Main {
         consultorTec[0] = new ConsultorNegocios("Jose Maria","Back End","COL",3000000L,600000L,"Empleado",bilingue,habDesarrollador);
 
         Tecnologia industriaTec = new Tecnologia(devTecnologia,analistaTec,produccionTec,consultorTec);
+        System.out.println("*** INFORME EMPLEADOS INDUSTRIA TECNOLOGIA ***");
         industriaTec.generarInformeEmpleados();
+
+
+
+        IngenieroProduccion produccionManu[] = new IngenieroProduccion[1];
+        produccionManu[0] = new IngenieroProduccion("felipe","Ingeniero Producción","COL",3000000L,600000L,"Empleado",bilingue,habDesarrollador);
+
+        ConsultorNegocios consultorManu[] = new ConsultorNegocios[1];
+        consultorManu[0] = new ConsultorNegocios("Maria","Consultora","COL",3000000L,600000L,"Empleada",bilingue,habDesarrollador);
+
+        Manufactura indrustriaManu = new Manufactura();
+        indrustriaManu.setIngenieros(produccionManu);
+        indrustriaManu.setConsultores(consultorManu);
+        System.out.println("*** INFORME EMPLEADOS INDUSTRIA MANUFACTURA ***");
+        indrustriaManu.generarInformeEmpleados();
+
     }
 }

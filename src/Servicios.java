@@ -4,6 +4,9 @@ public class Servicios extends Industria{
         super(desarrolladores, analistas, ingenieros, consultores);
     }
 
+    public Servicios() {
+    }
+
     @Override
     public void estructuraCompensacion() {
 
