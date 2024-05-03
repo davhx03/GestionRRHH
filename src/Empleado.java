@@ -101,6 +101,6 @@ public abstract class Empleado implements CalcularSalario {
 
     @Override
     public double calcularSalario() {
-        return salarioBase + bonificaciones;
+        return getSalarioBase() + getBonificaciones();
     }
 }
