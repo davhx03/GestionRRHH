@@ -3,8 +3,4 @@ public class AnalistaFinanciero extends Empleado {
         super(nombre, rol, ubicacion, salarioBase, bonificaciones, nivelJerarquico, idiomasHablados, habilidadesTecnicas);
     }
 
-    @Override
-    public double calcularSalario() {
-        return super.calcularSalario();
-    }
 }

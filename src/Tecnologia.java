@@ -19,4 +19,5 @@ public class Tecnologia extends Industria{
     public void progamaDesarolloProfesional() {
 
     }
+
 }
