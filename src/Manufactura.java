@@ -4,6 +4,9 @@ public class Manufactura extends Industria {
         super(desarrolladores, analistas, ingenieros, consultores);
     }
 
+    public Manufactura() {
+    }
+
     @Override
     public void estructuraCompensacion() {
 

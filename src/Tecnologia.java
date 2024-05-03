@@ -5,6 +5,9 @@ public class Tecnologia extends Industria{
         super(desarrolladores, analistas, ingenieros, consultores);
     }
 
+    public Tecnologia() {
+    }
+
     @Override
     public void estructuraCompensacion() {
 
