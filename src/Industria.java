@@ -10,4 +10,5 @@ public abstract class Industria {
         this.ingenieros = ingenieros;
         this.consultores = consultores;
     }
+
 }
