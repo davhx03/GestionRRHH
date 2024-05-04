@@ -112,7 +112,7 @@ public abstract class Empleado implements CalcularSalario {
 
     @Override
     public void mostrarEmpleado() {
-        System.out.println("\nNombre: " + nombre + "\nRol: " + rol +"\nSalario Total:"+ calcularSalario()+ "\nNivel Jerarquico: " + nivelJerarquico + "\n Idiomas Hablados: ");
+        System.out.println("Nombre: " + nombre + "\nRol: " + rol + "\nNivel Jerarquico: " + nivelJerarquico + "\n Idiomas Hablados: ");
 
         for (int i = 0; i < idiomasHablados.length; i++) {
             System.out.print(idiomasHablados[i] + ", ");

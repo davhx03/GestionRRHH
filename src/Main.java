@@ -129,7 +129,7 @@ public class Main {
                         System.out.println("2. Informe de nómina de Industria Manufactura");
                         System.out.println("3. Informe de nómina de Industria Servicios");
                         System.out.println("4. Informe de nómina de Industria Finanzas");
-                        System.out.println("5. Volver al menú principal");
+                        System.out.println("9. Volver al menú principal");
                         System.out.println("0. Salir");
 
                         int opcion = scanner.nextInt();
@@ -173,7 +173,7 @@ public class Main {
                         System.out.println("2. Estructura de compensación Industria Manufactura");
                         System.out.println("3. Estructura de compensación Industria Servicios");
                         System.out.println("4. Estructura de compensación Industria Finanzas");
-                        System.out.println("5. Volver al menú principal");
+                        System.out.println("9. Volver al menú principal");
                         System.out.println("0. Salir");
 
                         int opcion = scanner.nextInt();
@@ -217,7 +217,7 @@ public class Main {
                         System.out.println("2. Beneficios Industria Manufactura");
                         System.out.println("3. Beneficios Industria Servicios");
                         System.out.println("4. Beneficios Industria Finanzas");
-                        System.out.println("5. Volver al menú principal");
+                        System.out.println("9. Volver al menú principal");
                         System.out.println("0. Salir");
 
                         int opcion = scanner.nextInt();
@@ -261,7 +261,7 @@ public class Main {
                         System.out.println("2. Programa de desarrollo profesional Industria Manufactura");
                         System.out.println("3. Programa de desarrollo profesional Industria Servicios");
                         System.out.println("4. Programa de desarrollo profesional Industria Finanzas");
-                        System.out.println("5. Volver al menú principal");
+                        System.out.println("9. Volver al menú principal");
                         System.out.println("0. Salir");
 
                         int opcion = scanner.nextInt();
