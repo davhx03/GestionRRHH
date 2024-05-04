@@ -1,9 +1,10 @@
 public interface Complejidades {
 
-
-    public void estructuraCompensacion();
-    public void beneficios();
-    public void progamaDesarolloProfesional();
+    void generarInformeEmpleados();
+     void estructuraCompensacion();
+     void beneficios();
+     void progamaDesarolloProfesional();
+    void generarInformeNomina();
 
 
 }

@@ -100,6 +100,10 @@ public abstract class Empleado implements CalcularSalario {
         this.habilidadesTecnicas = habilidadesTecnicas;
     }
 
+    public Long getSalarioTotal() {
+        return salarioTotal;
+    }
+
     @Override
     public long calcularSalario() {
         salarioTotal = getSalarioBase()+getBonificaciones();

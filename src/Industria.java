@@ -14,7 +14,6 @@ public abstract class Industria implements Complejidades{
     public Industria() {
 
     }
-
     public Desarrollador[] getDesarrolladores() {
         return desarrolladores;
     }
@@ -77,5 +76,56 @@ public abstract class Industria implements Complejidades{
         }
          System.out.println("\n________________________");
      }
+    }
+
+    @Override
+    public void generarInformeNomina() {
+        Long nominaDev= 0L;
+        Long nominaAnalistas=0L;
+        Long nominaIng=0L;
+        Long nominaConsultores=0L;
+        Long nominaIndustria=0L;
+        System.out.println("El informe de nómina de la Industria seleccionada es el siguiente: ");
+        if (desarrolladores != null){
+            System.out.println("\nÁrea de Desarrolladores: ");
+            for (int i = 0; i < desarrolladores.length; i++) {
+                desarrolladores[i].calcularSalario();
+                System.out.println(desarrolladores[i].getNombre()+": "+ desarrolladores[i].getSalarioTotal());
+                nominaDev += desarrolladores[i].getSalarioTotal();
+            }
+            nominaIndustria += nominaDev;
+            System.out.println("La nómina del área de desarrolladores es:"+nominaDev+"\n");
+        }
+        if (analistas != null){
+            System.out.println("\nÁrea de Analistas Financieros: ");
+            for (int i = 0; i < analistas.length; i++) {
+                analistas[i].calcularSalario();
+                System.out.println(analistas[i].getNombre()+": "+ analistas[i].getSalarioTotal());
+                nominaAnalistas += analistas[i].getSalarioTotal();
+            }
+            nominaIndustria += nominaAnalistas;
+            System.out.println("La nómina del área de analistas financieros es:"+nominaAnalistas+"\n");
+        }
+        if (ingenieros != null){
+            System.out.println("\nIngenieros de producción: ");
+            for (int i = 0; i < ingenieros.length; i++) {
+                ingenieros[i].calcularSalario();
+                System.out.println(ingenieros[i].getNombre()+": "+ ingenieros[i].getSalarioTotal());
+                nominaIng= ingenieros[i].getSalarioTotal();
+            }
+            nominaIndustria += nominaIng;
+            System.out.println("La nómina total del área de ingenieros de producción es: "+nominaIng+"\n");
+        }
+        if (consultores != null){
+            System.out.println("\nConsultores de Negocios: ");
+            for (int i = 0; i < consultores.length; i++) {
+                consultores[i].calcularSalario();
+                System.out.println(consultores[i].getNombre()+": "+ consultores[i].getSalarioTotal());
+                nominaConsultores= consultores[i].getSalarioTotal();
+            }
+            nominaIndustria += nominaConsultores;
+            System.out.println("La nómina del área de analistas financieros es:"+nominaConsultores+"\n");
+        }
+        System.out.println("\n \nLa nomina total de la industria es: "+ nominaIndustria);
     }
 }
