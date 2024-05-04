@@ -1,12 +1,14 @@
 public class Main {
     public static void main(String[] args) {
         Desarrollador[] devTecnologia = new Desarrollador[2];
+
         String bilingue[] =new String[2];
         bilingue[0]="Epañol";
         bilingue[1]="Inglés";
         String habDesarrollador[]= new String[2];
         habDesarrollador[0]= "Back";
         habDesarrollador[1]="GitHub";
+        
         devTecnologia[0]= new Desarrollador("Mario","Back End","COL",3000000L,600000L,"Empleado",bilingue,habDesarrollador);
         devTecnologia[1]= new Desarrollador("Juan","Java Developer","COL",3000000L,600000L,"Empleado",bilingue,habDesarrollador);
 
