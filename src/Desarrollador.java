@@ -4,4 +4,8 @@ public class Desarrollador extends Empleado {
         super(nombre, rol, ubicacion, salarioBase, bonificaciones, nivelJerarquico, idiomasHablados, habilidadesTecnicas);
     }
 
+    @Override
+    public long calcularSalario() {
+        return super.calcularSalario();
+    }
 }

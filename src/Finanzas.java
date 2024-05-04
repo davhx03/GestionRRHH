@@ -4,6 +4,9 @@ public class Finanzas extends Industria {
         super(desarrolladores, analistas, ingenieros, consultores);
     }
 
+    public Finanzas() {
+    }
+
     @Override
     public void estructuraCompensacion() {
 
