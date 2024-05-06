@@ -68,7 +68,6 @@ public class Main {
             System.out.println("Seleccione una opción:");
             System.out.println("1. Informe de empleados por Industria");
             System.out.println("2. Informe de nómina por Industria");
-            System.out.println("2. Informe de nómina por Industria");
             System.out.println("3. Conocer estructura compensación por Tipo de Industria");
             System.out.println("4. Conocer beneficios por Tipo de Industria");
             System.out.println("5. Conocer programa de desarrollo profesional por Tipo de Industria");
