@@ -21,7 +21,7 @@ public class Finanzas extends Industria {
         beneficios[0] = "Descuento del 20% en universidades locales";
         beneficios[1] = "Medicina prepagada";
         for(int i=0;i<beneficios.length;i++){
-            System.out.println(beneficios[i]+"\n");
+            System.out.println(beneficios[i]);
         }
     }
 
@@ -31,7 +31,7 @@ public class Finanzas extends Industria {
         programaDesarrolloProfesional[0] = "Formación en habilidades blandas";
         programaDesarrolloProfesional[1] = "Formación profesional en finanzas";
         for(int i=0;i<programaDesarrolloProfesional.length;i++){
-            System.out.println(programaDesarrolloProfesional[i]+" \n");
+            System.out.println(programaDesarrolloProfesional[i]);
         }
     }
 }

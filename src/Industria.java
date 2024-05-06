@@ -49,28 +49,32 @@ public abstract class Industria implements Complejidades{
     public void generarInformeEmpleados() {
 
        if (desarrolladores != null){
-           System.out.println("\nDesarrolladores: ");
+           System.out.print("Desarrolladores: ");
            for (int i = 0; i < desarrolladores.length; i++) {
+               System.out.println("\n");
                desarrolladores[i].mostrarEmpleado();
            }
            System.out.println("\n________________________");
        }
        if (analistas != null){
-        System.out.println("\nAnalistas Financieros: ");
+        System.out.print("Analistas Financieros: ");
         for (int i = 0; i < analistas.length; i++) {
+            System.out.println("\n");
             analistas[i].mostrarEmpleado();
         }
            System.out.println("\n________________________");
        }
    if (ingenieros != null){
-        System.out.println("\nIngenieros de producción: ");
+        System.out.print("Ingenieros de producción: ");
         for (int i = 0; i < ingenieros.length; i++) {
+            System.out.println("\n");
             ingenieros[i].mostrarEmpleado();
         }
        System.out.println("\n________________________");
    }
      if (consultores != null){
-        System.out.println("\nConsultores de Negocios: ");
+        System.out.print("Consultores de Negocios: ");
+         System.out.println("\n");
         for (int i = 0; i < consultores.length; i++) {
             consultores[i].mostrarEmpleado();
         }
@@ -88,13 +92,14 @@ public abstract class Industria implements Complejidades{
         System.out.println("El informe de nómina de la Industria seleccionada es el siguiente: ");
         if (desarrolladores != null){
             System.out.println("\nÁrea de Desarrolladores: ");
+            System.out.println("\n");
             for (int i = 0; i < desarrolladores.length; i++) {
                 desarrolladores[i].calcularSalario();
                 System.out.println(desarrolladores[i].getNombre()+": "+ desarrolladores[i].getSalarioTotal());
                 nominaDev += desarrolladores[i].getSalarioTotal();
             }
             nominaIndustria += nominaDev;
-            System.out.println("La nómina del área de desarrolladores es:"+nominaDev+"\n");
+            System.out.println("La nómina del área de desarrolladores es:"+nominaDev);
         }
         if (analistas != null){
             System.out.println("\nÁrea de Analistas Financieros: ");
@@ -104,7 +109,7 @@ public abstract class Industria implements Complejidades{
                 nominaAnalistas += analistas[i].getSalarioTotal();
             }
             nominaIndustria += nominaAnalistas;
-            System.out.println("La nómina del área de analistas financieros es:"+nominaAnalistas+"\n");
+            System.out.println("La nómina del área de analistas financieros es:"+nominaAnalistas);
         }
         if (ingenieros != null){
             System.out.println("\nIngenieros de producción: ");
@@ -114,7 +119,7 @@ public abstract class Industria implements Complejidades{
                 nominaIng= ingenieros[i].getSalarioTotal();
             }
             nominaIndustria += nominaIng;
-            System.out.println("La nómina total del área de ingenieros de producción es: "+nominaIng+"\n");
+            System.out.println("La nómina total del área de ingenieros de producción es: "+nominaIng);
         }
         if (consultores != null){
             System.out.println("\nConsultores de Negocios: ");
@@ -124,7 +129,7 @@ public abstract class Industria implements Complejidades{
                 nominaConsultores= consultores[i].getSalarioTotal();
             }
             nominaIndustria += nominaConsultores;
-            System.out.println("La nómina del área de analistas financieros es:"+nominaConsultores+"\n");
+            System.out.println("La nómina del área de analistas financieros es:"+nominaConsultores);
         }
         System.out.println("\n \nLa nomina total de la industria es: "+ nominaIndustria);
     }
